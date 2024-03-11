@@ -1,0 +1,392 @@
+
+		Prashant	Shweta	Kalpna	Karuna Vijayeta Rinku
+
+Hrushikesh
+
+Bishnu
+
+
+
+	cmd
+
+Install Angular
+
+	-> npm install -g @angular/cli
+
+	-> ng version
+
+	
+
+mkdir vishal
+cd vishal
+
+To make a new application => ng new BankApp
+
+		src/app/app.component.html
+			app.component.css
+			app.component.ts
+	...
+
+			Angular 
+
+
+dir
+cd BankApp
+dir
+
+BankApp> ng serve
+	
+
+
+
+
+1. installed angular
+
+	npm install -g angular/cli
+
+2. ng version
+
+3. make a new app
+	ng new BankApp
+
+4. Turn to this folder
+	cd BankApp
+
+5. deploy the application
+	ng serve
+
+6. start the browser
+	http://localhost:4200
+
+
+	app.component.html
+--------
+
+uninstall angular
+
+-	npm uninstall -g @angular/cli
+
+- 	npm cache clean
+-	npm cache verify
+
+-	npm install -g @angular/cli@17.0.1
+
+
+23 design patterns
+jee pattern
+
+
+		mvc pattern
+
+	Model		View	Controller
+	(data/api)	|		|
+			|	   logic/validation
+		  html + css
+
+
+			Controller
+			|logic 
+		----------------
+		|		| request 
+		Model		View
+	-  coffee beans		touch screen
+	  in a container	to select the various
+	- milk jar		options
+	- water jar
+	
+	Coffee vending machine
+
+
+
+
+	html		css		javascript
+	VIEW		STYLE		logic/validation
+
+
+index.html	index.css		index.js
+login.html	
+
+.
+#
+
+
+	Component based architecture
+	|
+-----------------
+|		|
+UI		NON-UI
+|		|	
+[html		service ( may be a calculation)
+css		pipe 
+ts]
+
+
+My Salary is {{ mysal | currency }}
+
+
+
+
+	
+
+
+			Angular
+
+	mvc framework		vs	mvc pattern
+		|
+	semi-developed
+	application
+
+collection f/w
+threading f/w
+spring f/w
+hibernate f/w
+
+
+learning pyramid
+images
+
+
+NLP
+3 door entry brain
+
+				
+	ear		eye		nose
+
+
+	mouth		taste/talk	skin
+			
+
+
+> ng new BankApp
+> ng serve
+> localhost:4200
+
+Web page
+
+
+-----------------------------------------------
+
+		header
+
+	side		main content
+	nav			sub content
+	bar
+
+		footer
+-----------------------------------------------
+dermatoglyfix
+
+
+	practice doesnt make man perfect
+
+	perfect practice makes man perfect
+
+
+	man			woman
+	|			|
+	V			K
+	A			A
+	K			V
+
+		AVK
+		||
+		S|
+
+
+
+
+
+
+	
+	man1			man2
+
+	Cap			Cap
+	NY			
+	@ @ Rayban		@ @
+
+	TShirt			TShirt
+	  benetton		
+
+	Jean			Jean
+	  Levis
+
+
+	Shoes			Shoes
+	 Sketchers/Nike		 ...
+
+
+/* single
+  multi  */
+
+// single line
+
+comment : extra information
+
+
+Annotations = extended version of comments
+
+
+	Annotation Driven programming
+	Declarative programming
+
+	Java			Microsoft
+	|			|
+	Annotation		Decorators
+
+	@			@
+
+
+	
+
+	SPA
+
+	Single Page Application
+
+	
+
+
+ng g c AddPayee
+
+		g = generate
+		c = component
+
+	
+
+
+    1	
+ ng new BankApp -- index.html -> <app-root> </app-root> 3
+		|
+		app			selector:app-root  2
+		|			   |
+		app.component.html + css + ts
+		|	|
+		|	<add-payee></add-payee> 6
+		|
+		|4						export class Payee { }
+		ng g c AddPayee		selector: add-payee 5	   |
+			|				|	   |
+			add-payee.component.html + css +ts	   |
+								   |
+			ViewPayee				   |
+			|  view-payee.component.html     ts 	Payee.ts
+			|	|			  |	   |
+			|<td>payeeObj.payeeId</td>	payeeObj Payee
+			|
+			ViewAllPayees				
+			| <tr *ngFor="let x of payees">   ts--> CommonModule
+			|   <td> {{ x.payeeId }}	  |	
+			|				payees: Payee[]=[.....]
+			|
+			ModifyPayee
+			|
+			DeletePayee
+
+
+
+
+
+
+
+
+
+https://github.com/vishhaldawane/Tecnimont/blob/main/add-payee.component.html
+k.dogra@tecnimont.in
+
+	ng g c AddPayee
+	ng g c ViewPayee
+	ng g c ViewAllPayees
+	ng g c DeletePayee
+	ng g c ModifyPayee
+
+
+document.getElementById("id").value
+
+
+
+	int i;
+	char name[20];
+
+create table emp
+(
+   empno number,
+   ename varchar2(20)
+);
+
+
+
+
+
+:1
+
+
+
+
+
+
+
+
+
+
+
+	Enter payee name
+	Etner payee acno
+	Enter payee ifsc
+	
+	View All Payees
+
+	payeeid		nickname	action
+	1		..		View Delete
+	2		..		View Delete
+	3				View Delete
+	4
+	5
+
+
+
+
+
+
+
+1. tables - interrelated - one2one, one2many, many2many
+2. pojos - classes mapped with tables
+3. repositories
+4. BUSINESS LOGIC - BUSINESS SERVICE LAYER
+5. CONTROLLER - API FOR CRUD
+	http://ip:port/yourapp/get getAll   add, update, delete
+		DTO
+-------------
+6. UI (either in angular or in react )
+		  f/w		open library
+
+
+	add-payee.component.ts		|	payee.service.ts
+	|				|	addpayee() { }
+	class AddPayee
+	{
+		data + logic
+	}	 |
+		html/css
+		Add <--user clicks here
+
+
+
+
+
+	Enter principal
+	Enter number of years
+	Enter rate
+
+	calculate -- hint -- (click) 
+	 |
+	it should show the simple interest - hint {{ }}
+
+
+
+
+
+
+
+
+
+
+
