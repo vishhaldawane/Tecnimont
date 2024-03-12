@@ -7,3 +7,13 @@
 5 Bank Balance is {{bankBalance | currency:'INR':'symbol-narrow':'14.2-3'}} <br>
 6 Bank Balance is {{bankBalance | currency:'INR':'Rupee':'17.2-5'}} <br>
 <hr>
+
+Todays date is {{today}} <br>
+Todays date is {{today | date}} <br>
+Todays date is {{today | date : 'shortDate'}} <br>
+Todays date is {{today | date : 'fullDate'}} <br>
+Todays date is {{today | date : 'fullDate'| uppercase}} <br>
+Todays date is {{today | date : 'fullDate'| lowercase}} <br>
+
+Todays date is {{today | date : 'M/dd/yyyy'}} <br>
+Todays date is {{today | date : 'h:mm'}} <br>
