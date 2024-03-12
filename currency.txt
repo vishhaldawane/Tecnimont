@@ -1,0 +1,9 @@
+<hr>
+
+1 Bank Balance is {{bankBalance | currency}} <br>
+2 Bank Balance is {{bankBalance | currency:'INR'}} <br>
+3 Bank Balance is {{bankBalance | currency:'INR':'code'}} <br>
+4 Bank Balance is {{bankBalance | currency:'INR':'symbol':'40.12'}} <br>
+5 Bank Balance is {{bankBalance | currency:'INR':'symbol-narrow':'14.2-3'}} <br>
+6 Bank Balance is {{bankBalance | currency:'INR':'Rupee':'17.2-5'}} <br>
+<hr>
