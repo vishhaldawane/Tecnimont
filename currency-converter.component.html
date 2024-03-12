@@ -1,0 +1,20 @@
+<h1>Currency Converter</h1> 
+
+Select source Currency
+<select [(ngModel)]="selectedSource">
+    <option value="INR">INR</option>
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+</select>
+<br>
+Select Target Currency
+<select [(ngModel)]="selectedTarget">
+    <option value="INR">INR</option>
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+</select>
+<br>
+Amount to convert <input type="number" [(ngModel)]="amountToConvert"> <br>
+Converted amount is : {{ convertedAmount }}
+<br>
+<button (click)="convertIt()">Convert It</button>
