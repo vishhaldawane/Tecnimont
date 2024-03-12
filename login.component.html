@@ -1,0 +1,37 @@
+
+
+Enter username <input type="text">
+
+<br>
+
+<button (click)="isUserLoggedIn()">{{buttonLabel}}</button>
+
+<div *ngIf="isLogin; else abc">
+    User is Logged in
+</div>
+  
+<ng-template #abc>
+    <div>User is not Logged in</div> 
+</ng-template>
+
+<hr>
+Enter any number <input type="number" 
+    (input)="findIt()" [(ngModel)]="num1"> <br>
+Number is {{message}}
+
+<hr>
+Enter any number <input type="number" 
+     [(ngModel)]="num2"> <br>
+<div *ngIf="num2>10; else firstElse">
+    Number is GREATER than 10
+</div>
+
+<ng-template #firstElse>
+    <div *ngIf="num2<10; else secondElse">
+        Number is LESSER than 10
+    </div>    
+</ng-template>
+
+<ng-template #secondElse>
+    <div>Number is EQUALS to 10</div>
+</ng-template>
