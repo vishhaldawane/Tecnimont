@@ -1,0 +1,24 @@
+{{firstname.errors?.  minlength  ?.requiredLength}}
+
+<div *ngIf="!firstname?.valid && (firstname?.dirty || firstname?.touched)" class="error">
+      <div *ngIf="firstname.errors?.required">
+        First Name is required
+      </div>
+      <div *ngIf="firstname.errors?.minlength">
+        First Name Minimum Length is {{firstname.errors?.minlength?.requiredLength}}
+      </div>
+    </div>
+
+---------------------
+
+<div *ngIf="!firstname?.valid && (firstname?.dirty || firstname?.touched)" class="error">
+      <div *ngIf="firstname.errors?.['required']">
+        First Name is required
+      </div>
+      <div *ngIf="firstname.errors?.['minlength']">
+        First Name Minimum Length is {{firstname.errors?['.minlength']?.requiredLength}}
+      </div>
+    </div>
+
+{{firstname.errors?.['minlength']?.requiredLength}}
+
