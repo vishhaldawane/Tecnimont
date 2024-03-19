@@ -1,0 +1,6 @@
+Observable issue 
+angular.json for angular 17
+ssr=false
+prerender= false
+-------------
+ng new appname --standalone --ssr=false
